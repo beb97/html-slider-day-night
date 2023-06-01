@@ -1,0 +1,149 @@
+* {
+  transition: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+html {
+    background-color: aliceblue;
+    padding: 100px;
+}
+
+body>div {
+
+margin: auto;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(149, 222, 244);
+  border-radius: 50px;
+  position: relative;
+  /* box-shadow: inset 0px 0px 5px black; */
+  border: 2px rgb(119, 119, 119) solid;
+
+  transition: 0.5s;
+  overflow: hidden;
+}
+.night {
+  background-color: rgb(0, 0, 0);
+}
+
+#sun {
+    box-sizing: border-box;
+    background-clip: content-box;
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  background-color: rgb(245, 238, 100);
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  transition: 0.5s;
+  /* box-shadow: 1px 1px 1px black; */
+}
+
+.night #sun {
+  background-color: rgb(146, 146, 146);
+  left: 100px;
+}
+
+#spot1 {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 0,0);
+    top:30%;
+    left: 30%;
+}
+.night #spot1 {
+    background-color: rgb(222, 222, 222);
+}
+
+#radial1 {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 50px;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(180, 232, 247,1);
+}
+#radial2 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50px;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(191, 237, 251,1);
+}
+#radial3 {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50px;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(226, 248, 254,1);
+}
+
+.night #radial1 {
+    left:160px;
+    background-color:rgba(180, 232, 247,0.1);
+}
+.night #radial2 {
+    left:150px;
+    background-color:rgba(180, 232, 247,0.1);
+}
+.night #radial3 {
+    left:140px;
+    background-color:rgba(180, 232, 247,0.05);
+}
+
+i.fa-cloud {
+    font-size: 100px;
+    color: rgba(255, 255, 255,1);
+    position: absolute;
+    right: -30px;
+    top: 30px;
+    transform: scaleX(-1);
+}
+.night i.fa-cloud {
+
+    color: rgba(255, 255, 255,0);
+    right: -150px;
+
+}
+
+i.fa-asterisk {
+    font-size: 10px;
+    color: rgba(248, 248, 248);
+    position: absolute;
+    transform: scaleX(0);
+    /* top: 50%;
+    left: 0px; */
+}
+
+.night .star {
+    transform: scaleX(1) rotate(180deg);
+}
+.night #star1 {
+    top: 10px;
+    left: 40px;
+    font-size: 8px;
+}
+.night #star2 {
+    top: 50px;
+    left: 30px;
+    font-size: 10px;
+}
+
+.night #star3 {
+    top: 70px;
+    left: 70px;
+    font-size: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
